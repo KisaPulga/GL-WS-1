@@ -12,3 +12,4 @@ C:\Users\leosc\Desktop\Projects\Ecole\GL-WS-1\GestionBibliotheque\GestionBibliot
 C:\Users\leosc\Desktop\Projects\Ecole\GL-WS-1\GestionBibliotheque\GestionBibliotheque\obj\Debug\net8.0\GestionBibliotheque.pdb
 C:\Users\leosc\Desktop\Projects\Ecole\GL-WS-1\GestionBibliotheque\GestionBibliotheque\obj\Debug\net8.0\GestionBibliotheque.genruntimeconfig.cache
 C:\Users\leosc\Desktop\Projects\Ecole\GL-WS-1\GestionBibliotheque\GestionBibliotheque\obj\Debug\net8.0\ref\GestionBibliotheque.dll
+C:\Users\leosc\Desktop\Projects\Ecole\GL-WS-1\GestionBibliotheque\GestionBibliotheque\obj\Debug\net8.0\GestionBibliotheque.sourcelink.json
