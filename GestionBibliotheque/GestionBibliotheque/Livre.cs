@@ -4,10 +4,10 @@ public class Livre
 {
     public string Titre { get; set; }
     public string Auteur { get; set; }
-    private bool EstDisponible { get; set; } = true;
-    private string NomEmprunteur { get; set; }
-    private DateTime DateEmprunt { get; set; }
-    private DateTime DateRetour { get; set; }
+    public bool EstDisponible { get; set; } = true;
+    public string NomEmprunteur { get; set; }
+    public DateTime DateEmprunt { get; set; }
+    public DateTime DateRetour { get; set; }
 
     public Livre(string titre, string auteur)
     {

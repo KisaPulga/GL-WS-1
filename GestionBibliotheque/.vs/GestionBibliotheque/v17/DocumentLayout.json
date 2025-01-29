@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\leosc\\Desktop\\Projects\\Ecole\\GL-WS-1\\GestionBibliotheque\\",
+  "WorkspaceRootPath": "C:\\Users\\leosc_1c7hxom\\Desktop\\Projects\\Ecole\\GL-WS-1\\GestionBibliotheque\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA626EC3-9A99-44A2-BAE1-3F55088F5A64}|GestionBibliotheque\\GestionBibliotheque.csproj|c:\\users\\leosc\\desktop\\projects\\ecole\\gl-ws-1\\gestionbibliotheque\\gestionbibliotheque\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BA626EC3-9A99-44A2-BAE1-3F55088F5A64}|GestionBibliotheque\\GestionBibliotheque.csproj|c:\\users\\leosc_1c7hxom\\desktop\\projects\\ecole\\gl-ws-1\\gestionbibliotheque\\gestionbibliotheque\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA626EC3-9A99-44A2-BAE1-3F55088F5A64}|GestionBibliotheque\\GestionBibliotheque.csproj|solutionrelative:gestionbibliotheque\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA626EC3-9A99-44A2-BAE1-3F55088F5A64}|GestionBibliotheque\\GestionBibliotheque.csproj|c:\\users\\leosc\\desktop\\projects\\ecole\\gl-ws-1\\gestionbibliotheque\\gestionbibliotheque\\bibliotheque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BA626EC3-9A99-44A2-BAE1-3F55088F5A64}|GestionBibliotheque\\GestionBibliotheque.csproj|c:\\users\\leosc_1c7hxom\\desktop\\projects\\ecole\\gl-ws-1\\gestionbibliotheque\\gestionbibliotheque\\bibliotheque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA626EC3-9A99-44A2-BAE1-3F55088F5A64}|GestionBibliotheque\\GestionBibliotheque.csproj|solutionrelative:gestionbibliotheque\\bibliotheque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA626EC3-9A99-44A2-BAE1-3F55088F5A64}|GestionBibliotheque\\GestionBibliotheque.csproj|c:\\users\\leosc\\desktop\\projects\\ecole\\gl-ws-1\\gestionbibliotheque\\gestionbibliotheque\\livre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BA626EC3-9A99-44A2-BAE1-3F55088F5A64}|GestionBibliotheque\\GestionBibliotheque.csproj|c:\\users\\leosc_1c7hxom\\desktop\\projects\\ecole\\gl-ws-1\\gestionbibliotheque\\gestionbibliotheque\\livre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA626EC3-9A99-44A2-BAE1-3F55088F5A64}|GestionBibliotheque\\GestionBibliotheque.csproj|solutionrelative:gestionbibliotheque\\livre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,17 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Bibliotheque.cs",
-              "DocumentMoniker": "C:\\Users\\leosc\\Desktop\\Projects\\Ecole\\GL-WS-1\\GestionBibliotheque\\GestionBibliotheque\\Bibliotheque.cs",
+              "DocumentMoniker": "C:\\Users\\leosc_1c7hxom\\Desktop\\Projects\\Ecole\\GL-WS-1\\GestionBibliotheque\\GestionBibliotheque\\Bibliotheque.cs",
               "RelativeDocumentMoniker": "GestionBibliotheque\\Bibliotheque.cs",
-              "ToolTip": "C:\\Users\\leosc\\Desktop\\Projects\\Ecole\\GL-WS-1\\GestionBibliotheque\\GestionBibliotheque\\Bibliotheque.cs",
+              "ToolTip": "C:\\Users\\leosc_1c7hxom\\Desktop\\Projects\\Ecole\\GL-WS-1\\GestionBibliotheque\\GestionBibliotheque\\Bibliotheque.cs",
               "RelativeToolTip": "GestionBibliotheque\\Bibliotheque.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-29T12:22:39.7Z",
               "EditorCaption": ""
@@ -41,11 +45,11 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Livre.cs",
-              "DocumentMoniker": "C:\\Users\\leosc\\Desktop\\Projects\\Ecole\\GL-WS-1\\GestionBibliotheque\\GestionBibliotheque\\Livre.cs",
+              "DocumentMoniker": "C:\\Users\\leosc_1c7hxom\\Desktop\\Projects\\Ecole\\GL-WS-1\\GestionBibliotheque\\GestionBibliotheque\\Livre.cs",
               "RelativeDocumentMoniker": "GestionBibliotheque\\Livre.cs",
-              "ToolTip": "C:\\Users\\leosc\\Desktop\\Projects\\Ecole\\GL-WS-1\\GestionBibliotheque\\GestionBibliotheque\\Livre.cs",
+              "ToolTip": "C:\\Users\\leosc_1c7hxom\\Desktop\\Projects\\Ecole\\GL-WS-1\\GestionBibliotheque\\GestionBibliotheque\\Livre.cs",
               "RelativeToolTip": "GestionBibliotheque\\Livre.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-29T15:38:04.042Z",
               "EditorCaption": ""
@@ -54,11 +58,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\leosc\\Desktop\\Projects\\Ecole\\GL-WS-1\\GestionBibliotheque\\GestionBibliotheque\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\leosc_1c7hxom\\Desktop\\Projects\\Ecole\\GL-WS-1\\GestionBibliotheque\\GestionBibliotheque\\Program.cs",
               "RelativeDocumentMoniker": "GestionBibliotheque\\Program.cs",
-              "ToolTip": "C:\\Users\\leosc\\Desktop\\Projects\\Ecole\\GL-WS-1\\GestionBibliotheque\\GestionBibliotheque\\Program.cs",
+              "ToolTip": "C:\\Users\\leosc_1c7hxom\\Desktop\\Projects\\Ecole\\GL-WS-1\\GestionBibliotheque\\GestionBibliotheque\\Program.cs",
               "RelativeToolTip": "GestionBibliotheque\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBMAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAE4AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-29T09:42:46.938Z",
               "EditorCaption": ""
