@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleBibliotheque;
+using System;
 
 class Program
 
@@ -37,14 +38,14 @@ class Program
                     Console.WriteLine("Veuillez entrer l'auteur :");
                     auteur = Console.ReadLine();
                     bibliotheque.AjouterLivre(new Livre(titre, auteur));
-                    
+
                     break;
 
                 case "2":
                     Console.Clear();
                     Console.WriteLine("--- SUPPRIMER UN LIVRE ---");
                     Console.WriteLine("Veuillez entrer le titre du livre à supprimer :");
-                    titre= Console.ReadLine();
+                    titre = Console.ReadLine();
                     bibliotheque.SupprimerLivre(titre);
 
                     break;
@@ -89,7 +90,7 @@ class Program
             Console.Clear();
 
         }
-        
+
 
     }
 }
