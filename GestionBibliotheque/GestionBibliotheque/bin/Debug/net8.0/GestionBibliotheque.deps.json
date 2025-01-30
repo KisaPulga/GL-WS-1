@@ -9,6 +9,14 @@
       "GestionBibliotheque/1.0.0": {
         "runtime": {
           "GestionBibliotheque.dll": {}
+        },
+        "resources": {
+          "en/GestionBibliotheque.resources.dll": {
+            "locale": "en"
+          },
+          "fr/GestionBibliotheque.resources.dll": {
+            "locale": "fr"
+          }
         }
       }
     }

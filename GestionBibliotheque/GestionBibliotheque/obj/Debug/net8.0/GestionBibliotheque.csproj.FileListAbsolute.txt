@@ -28,3 +28,11 @@ C:\Users\leosc_1c7hxom\Desktop\Projects\Ecole\GL-WS-1\GestionBibliotheque\Gestio
 C:\Users\leosc_1c7hxom\Desktop\Projects\Ecole\GL-WS-1\GestionBibliotheque\GestionBibliotheque\obj\Debug\net8.0\GestionBibliotheque.pdb
 C:\Users\leosc_1c7hxom\Desktop\Projects\Ecole\GL-WS-1\GestionBibliotheque\GestionBibliotheque\obj\Debug\net8.0\GestionBibliotheque.genruntimeconfig.cache
 C:\Users\leosc_1c7hxom\Desktop\Projects\Ecole\GL-WS-1\GestionBibliotheque\GestionBibliotheque\obj\Debug\net8.0\ref\GestionBibliotheque.dll
+C:\Users\leosc_1c7hxom\Desktop\Projects\Ecole\GL-WS-1\GestionBibliotheque\GestionBibliotheque\bin\Debug\net8.0\en\GestionBibliotheque.resources.dll
+C:\Users\leosc_1c7hxom\Desktop\Projects\Ecole\GL-WS-1\GestionBibliotheque\GestionBibliotheque\bin\Debug\net8.0\fr\GestionBibliotheque.resources.dll
+C:\Users\leosc_1c7hxom\Desktop\Projects\Ecole\GL-WS-1\GestionBibliotheque\GestionBibliotheque\obj\Debug\net8.0\GestionBibliotheque.messages.resources
+C:\Users\leosc_1c7hxom\Desktop\Projects\Ecole\GL-WS-1\GestionBibliotheque\GestionBibliotheque\obj\Debug\net8.0\GestionBibliotheque.messages.en.resources
+C:\Users\leosc_1c7hxom\Desktop\Projects\Ecole\GL-WS-1\GestionBibliotheque\GestionBibliotheque\obj\Debug\net8.0\GestionBibliotheque.messages.fr.resources
+C:\Users\leosc_1c7hxom\Desktop\Projects\Ecole\GL-WS-1\GestionBibliotheque\GestionBibliotheque\obj\Debug\net8.0\GestionBibliotheque.csproj.GenerateResource.cache
+C:\Users\leosc_1c7hxom\Desktop\Projects\Ecole\GL-WS-1\GestionBibliotheque\GestionBibliotheque\obj\Debug\net8.0\en\GestionBibliotheque.resources.dll
+C:\Users\leosc_1c7hxom\Desktop\Projects\Ecole\GL-WS-1\GestionBibliotheque\GestionBibliotheque\obj\Debug\net8.0\fr\GestionBibliotheque.resources.dll

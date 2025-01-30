@@ -1,10 +1,12 @@
-﻿namespace ConsoleBibliotheque
+﻿using System;
+using System.Resources;
+
+namespace ConsoleBibliotheque
 {
-    /// <summary>
-    /// Représente un livre, avec un titre, un auteur, sa disponibilité ainsi que le nom de l'emprunteur et la date d'emprunt.
-    /// </summary>
     class Livre
     {
+        private ResourceManager rm;
+
         public string Titre { get; set; }
         public string Auteur { get; set; }
         public bool EstDisponible { get; set; } = true;
@@ -12,13 +14,27 @@
         public DateTime DateEmprunt { get; set; }
         public DateTime DateRetour { get; set; }
 
-        public Livre(string titre, string auteur)
+        public Livre(string titre, string auteur, ResourceManager resourceManager)
         {
             Titre = titre;
             Auteur = auteur;
+            rm = resourceManager;
         }
 
-        public override string ToString() => $"{Titre} - {Auteur} - {(EstDisponible ? "Disponible" : $"Emprunté par {NomEmprunteur} le {DateEmprunt}")}";
 
+        public string GetEtatLivre()
+        {
+            if (EstDisponible)
+            {
+                return rm.GetString("BookAvailable");
+            }
+            else
+            {
+                return string.Format(rm.GetString("BookBorrowedBy"), NomEmprunteur, DateEmprunt.ToShortDateString());
+            }
+        }
+
+        public override string ToString() => $"{Titre} - {Auteur} - {GetEtatLivre()}";
+        
     }
 }

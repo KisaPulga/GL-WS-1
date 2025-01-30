@@ -1,13 +1,23 @@
-﻿namespace ConsoleBibliotheque
+﻿using System;
+using System.Collections.Generic;
+using System.Resources;
+
+namespace ConsoleBibliotheque
 {
     class Bibliotheque
     {
         private List<Livre> maList = new List<Livre>();
+        private ResourceManager rm;
+
+        public Bibliotheque(ResourceManager resourceManager)
+        {
+            rm = resourceManager; 
+        }
 
         public void AjouterLivre(Livre livre)
         {
             maList.Add(livre);
-            Console.WriteLine($"Le livre {livre.Titre} a correctement été ajouté.");
+            Console.WriteLine(rm.GetString("BookAdded") + livre.Titre); 
         }
 
         public Livre RechercherLivre(string titre)
@@ -16,17 +26,15 @@
             {
                 if (livre.Titre == titre)
                 {
-                    Console.WriteLine($"Livre trouvé : {livre.Titre}, Auteur : {livre.Auteur}.");
+                    Console.WriteLine(rm.GetString("BookFound") + livre.Titre + "- " + rm.GetString("Author") + ": " + livre.Auteur); 
                     return livre;
                 }
                 else
                 {
-                    Console.WriteLine($"Le livre {titre} n'existe pas.");
-
+                    Console.WriteLine(rm.GetString("BookNotFound") + titre);
                 }
             }
             return null;
-
         }
 
         public void SupprimerLivre(string titre)
@@ -35,15 +43,15 @@
             if (livre != null)
             {
                 maList.Remove(livre);
-                Console.WriteLine($"Le livre {livre.Titre} a bien été supprimé.");
+                Console.WriteLine(rm.GetString("BookDeleted") + livre.Titre);
             }
         }
 
         public void AfficherLivre()
-        {
+        {    
             if (maList.Count == 0)
             {
-                Console.WriteLine("Aucun livre présent dans la bibliothèque");
+                Console.WriteLine(rm.GetString("NoBooksInLibrary")); 
             }
             else
             {
@@ -63,11 +71,11 @@
                 livre.EstDisponible = false;
                 livre.DateEmprunt = DateTime.Now;
                 livre.DateRetour = DateTime.Now.AddDays(7);
-                Console.WriteLine($"Le livre {livre.Titre} a été emprunté par {nomEmprunteur}.");
+                Console.WriteLine(rm.GetString("BookBorrowed") + livre.Titre + " " + rm.GetString("By") + " " + livre.NomEmprunteur); 
             }
             else if (livre != null)
             {
-                Console.WriteLine($"Le livre {livre.Titre} est déjà emprunté.");
+                Console.WriteLine(rm.GetString("BookAlreadyBorrowed") + livre.Titre); 
             }
         }
 
@@ -77,8 +85,8 @@
             if (livre != null && !livre.EstDisponible)
             {
                 Console.WriteLine(DateTime.Now > livre.DateRetour
-                    ? $"Le livre {livre.Titre} a été rendu en retard."
-                    : $"Le livre {livre.Titre} a été rendu à temps.");
+                    ? rm.GetString("BookReturnedLate") + livre.Titre 
+                    : rm.GetString("BookReturnedOnTime") + livre.Titre); 
 
                 livre.NomEmprunteur = null;
                 livre.EstDisponible = true;
@@ -87,7 +95,7 @@
             }
             else if (livre != null)
             {
-                Console.WriteLine($"Le livre {livre.Titre} n'est pas emprunté.");
+                Console.WriteLine(rm.GetString("BookNotBorrowed") + livre.Titre);
             }
         }
     }
