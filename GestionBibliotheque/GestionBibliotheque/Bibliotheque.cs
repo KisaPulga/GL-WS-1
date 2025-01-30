@@ -13,7 +13,7 @@ public class Bibliotheque
         }
         foreach (Livre livre in maList)
         {
-            Console.WriteLine($"{livre.Titre} - {(livre.EstDisponible ? "Disponible" : $"Emprunté par {livre.NomEmprunteur}")}");
+            Console.WriteLine($"{livre.Titre} - {(livre.EstDisponible ? "Disponible" : $"Emprunté par {livre.NomEmprunteur} le {livre.DateEmprunt}")}");
         }
     }
 
@@ -25,16 +25,18 @@ public class Bibliotheque
 
     public void SupprimerLivre(string titre)
     {
-        foreach(Livre livre in maList)
+        Livre livre = RechercherLivre(titre);
+
+        if (livre != null)
         {
-            if(livre.Titre == titre)
-            {
-                maList.Remove(livre);
-                Console.WriteLine($"Le livre {titre} a été supprimé.");
-                return;
-            }
+            maList.Remove(livre);
+            Console.WriteLine("Livre correctement supprimé.");
         }
-        Console.WriteLine($"Le livre {titre} n'existe pas.");
+        else
+        {
+            Console.WriteLine("Ce livre n'existe pas.");
+        }
+
     }
 
     public Livre RechercherLivre(string titre)
@@ -53,29 +55,17 @@ public class Bibliotheque
 
     public void EmprunterLivre(string titre, string nomEmprunteur)
     {
-        bool livreTrouve = false;
+        Livre livre = RechercherLivre(titre);
 
-        foreach (Livre livre in maList)
+        if(livre == null)
         {
-            if (livre.Titre == titre)
-            {
-                if (livre.EstDisponible)
-                {
-                    livre.EstDisponible = false;
-                    livre.NomEmprunteur = nomEmprunteur;
-                    livre.DateEmprunt = DateTime.Now;
-                    livre.DateRetour = DateTime.MinValue;
-                    Console.WriteLine($"Le livre {titre} a été emprunté par {nomEmprunteur}.");
-                }
-                else
-                {
-                    Console.WriteLine($"Le livre {titre} est déjà emprunté par {livre.NomEmprunteur}.");
-                }
-                livreTrouve = true;
-                break;
-            }
+            return;
         }
-        if (!livreTrouve)
+        else if(livre.EstDisponible == true)
+        {
+            livre.Emprunter(nomEmprunteur);
+        }
+        else
         {
             Console.WriteLine("Ce livre n'existe pas.");
         }
@@ -83,21 +73,13 @@ public class Bibliotheque
 
     public void RetournerLivre(string titre)
     {
-        bool livreTrouve = false;
+        Livre livre = RechercherLivre(titre);
 
-        foreach (Livre livre in maList)
+        if (livre != null && livre.EstDisponible)
         {
-            if (livre.Titre == titre)
-            {
-                livre.EstDisponible = true;
-                livre.DateRetour = DateTime.Now;
-                livre.NomEmprunteur = null;
-                livreTrouve = true;
-                Console.WriteLine($"Le livre {titre} a été retourné.");
-                break;
-            }
+            livre.Retourner();
         }
-        if (!livreTrouve)
+        else
         {
             Console.WriteLine("Ce livre n'existe pas.");
         }

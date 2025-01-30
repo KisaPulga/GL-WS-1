@@ -17,13 +17,13 @@ class Program
 
     static void Main(string[] args)
     {
-        string choixOperation;
+        string choixOperation = "0";
         string titre;
         string auteur;
         string emprunteur;
 
         Bibliotheque bibliotheque = new Bibliotheque();
-        do
+        while (choixOperation != "7")
         {
             Menu();
             choixOperation = Console.ReadLine();
@@ -37,8 +37,7 @@ class Program
                     Console.WriteLine("Veuillez entrer l'auteur :");
                     auteur = Console.ReadLine();
                     bibliotheque.AjouterLivre(new Livre(titre, auteur));
-                    Thread.Sleep(2000);
-                    Console.Clear();
+                    
                     break;
 
                 case "2":
@@ -47,8 +46,7 @@ class Program
                     Console.WriteLine("Veuillez entrer le titre du livre à supprimer :");
                     titre= Console.ReadLine();
                     bibliotheque.SupprimerLivre(titre);
-                    Thread.Sleep(2000);
-                    Console.Clear();
+
                     break;
 
                 case "3":
@@ -57,8 +55,7 @@ class Program
                     Console.WriteLine("Veuillez entrer le titre du livre à rechercher :");
                     titre = Console.ReadLine();
                     bibliotheque.RechercherLivre(titre);
-                    Thread.Sleep(2000);
-                    Console.Clear();
+
                     break;
 
                 case "4":
@@ -69,8 +66,7 @@ class Program
                     Console.WriteLine("Quel est votre nom ?");
                     emprunteur = Console.ReadLine();
                     bibliotheque.EmprunterLivre(titre, emprunteur);
-                    Thread.Sleep(2000);
-                    Console.Clear();
+
                     break;
 
                 case "5":
@@ -79,20 +75,20 @@ class Program
                     Console.WriteLine("Veuillez entrer le titre du livre à retourner :");
                     titre = Console.ReadLine();
                     bibliotheque.RetournerLivre(titre);
-                    Thread.Sleep(2000);
-                    Console.Clear();
+
                     break;
 
                 case "6":
                     Console.Clear();
                     Console.WriteLine("--- LISTE DES LIVRES ---");
                     bibliotheque.AfficherLivre();
-                    Thread.Sleep(2000);
-                    Console.Clear();
+
                     break;
             }
+            Thread.Sleep(2000);
+            Console.Clear();
 
-        } while (choixOperation != "7");
+        }
         
 
     }
